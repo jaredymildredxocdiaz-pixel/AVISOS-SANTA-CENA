@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrativo - Santa Cena 2027</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <!-- ENCABEZADO -->
+
+        <header class="encabezado">
+
+            <h1>Avisos</h1>
+
+            <div class="linea"></div>
+
+            <h2>Panel administrativo</h2>
+
+            <p class="subtitulo">
+                Santa Cena 2027
+            </p>
+
+            <p class="descripcion">
+                Consulte y supervise los avisos registrados
+                para cada Santa Cena.
+            </p>
+
+        </header>
+
+
+        <!-- ESTADO DEL PANEL -->
+
+        <section>
+
+            <h3>Estado del panel</h3>
+
+            <p class="ayuda">
+                Panel disponible para el equipo encargado.
+            </p>
+
+            <div class="opcion">
+
+                <div>
+
+                    <strong>
+                        Panel activo
+                    </strong>
+
+                    <span id="ultimaActualizacion">
+                        Esperando actualización...
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SELECCIÓN DE FECHA -->
+
+        <section>
+
+            <label class="titulo" for="fechaAdmin">
+                Seleccione la Santa Cena
+            </label>
+
+            <select
+                class="selector"
+                id="fechaAdmin"
+            >
+
+                <option value="">
+                    Seleccione una fecha
+                </option>
+
+                <option value="2027-01-03">
+                    3 de enero de 2027
+                </option>
+
+                <option value="2027-02-07">
+                    7 de febrero de 2027
+                </option>
+
+                <option value="2027-03-07">
+                    7 de marzo de 2027
+                </option>
+
+                <option value="2027-04-04">
+                    4 de abril de 2027
+                </option>
+
+                <option value="2027-05-02">
+                    2 de mayo de 2027
+                </option>
+
+                <option value="2027-06-06">
+                    6 de junio de 2027
+                </option>
+
+                <option value="2027-07-04">
+                    4 de julio de 2027
+                </option>
+
+                <option value="2027-08-01">
+                    1 de agosto de 2027
+                </option>
+
+                <option value="2027-09-05">
+                    5 de septiembre de 2027
+                </option>
+
+                <option value="2027-10-03">
+                    3 de octubre de 2027
+                </option>
+
+                <option value="2027-11-07">
+                    7 de noviembre de 2027
+                </option>
+
+                <option value="2027-12-05">
+                    5 de diciembre de 2027
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- RESULTADOS -->
+
+        <section id="resultados">
+
+            <h3>Registros</h3>
+
+            <p class="ayuda">
+                Seleccione una Santa Cena para consultar
+                los avisos registrados.
+            </p>
+
+        </section>
+
+
+        <!-- CERRAR PANEL -->
+
+        <section>
+
+            <button
+                type="button"
+                class="boton"
+                id="cerrarPanel"
+            >
+                Cerrar panel
+            </button>
+
+        </section>
+
+
+        <!-- PIE -->
+
+        <footer class="pie">
+
+            Panel administrativo correspondiente al año 2027
+
+        </footer>
+
+    </main>
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

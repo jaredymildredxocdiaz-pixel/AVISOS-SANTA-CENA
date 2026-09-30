@@ -1,0 +1,347 @@
+/* ==============================
+   CONFIGURACIÓN GENERAL
+============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #263238;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+
+/* ==============================
+   TARJETA PRINCIPAL
+============================== */
+
+.pagina {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ==============================
+   ENCABEZADO
+============================== */
+
+.encabezado {
+    text-align: center;
+}
+
+.encabezado h1 {
+    font-size: 42px;
+    color: #1d4773;
+    margin-bottom: 8px;
+}
+
+.linea {
+    width: 60px;
+    height: 4px;
+    background-color: #c6a15b;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+}
+
+.encabezado h2 {
+    font-size: 22px;
+    color: #37474f;
+    line-height: 1.3;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #c08b2c;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.descripcion {
+    text-align: center;
+    color: #68747c;
+    line-height: 1.6;
+    margin: 25px 0 30px;
+}
+
+
+/* ==============================
+   FORMULARIO
+============================== */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.campo {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccd3d8;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+.campo:focus {
+    border-color: #1d4773;
+}
+
+
+/* ==============================
+   SELECTORES
+============================== */
+
+.selector {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccd3d8;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 25px;
+}
+
+.selector:focus {
+    border-color: #1d4773;
+    outline: none;
+}
+
+
+/* ==============================
+   MOTIVOS
+============================== */
+
+.formulario h3 {
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+.ayuda {
+    font-size: 14px;
+    color: #7a858c;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background-color: #f7f9fa;
+    border: 1px solid #e0e5e8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.opcion input {
+    width: 20px;
+    height: 20px;
+    accent-color: #1d4773;
+}
+
+.opcion span {
+    color: #34495e;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   BOTÓN
+============================== */
+
+.boton {
+    width: 100%;
+    border: none;
+    background-color: #1d4773;
+    color: white;
+    padding: 15px;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #153856;
+}
+
+
+/* ==============================
+   PIE
+============================== */
+
+.pie {
+    text-align: center;
+    color: #7a858c;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+
+/* ==================================================
+   PANEL ADMINISTRATIVO
+================================================== */
+
+body:has(#fechaAdmin) {
+    background-color: #eef1f4;
+}
+
+
+/* ==============================
+   SECCIONES DEL PANEL
+============================== */
+
+body:has(#fechaAdmin) section {
+    margin-bottom: 28px;
+}
+
+body:has(#fechaAdmin) section h3 {
+    color: #34495e;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+
+/* ==============================
+   ESTADO DEL PANEL
+============================== */
+
+body:has(#fechaAdmin) section .opcion {
+    background-color: #f8fafb;
+    border-left: 4px solid #1d4773;
+    cursor: default;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+body:has(#fechaAdmin) section .opcion strong {
+    display: block;
+    color: #1d4773;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+#ultimaActualizacion {
+    display: block;
+    color: #68747c;
+    font-size: 13px;
+}
+
+
+/* ==============================
+   ÁREA DE REGISTROS
+============================== */
+
+#resultados {
+    margin-top: 5px;
+}
+
+#resultados > h3 {
+    margin-bottom: 8px;
+}
+
+
+/* ==============================
+   TARJETAS DE AVISOS
+============================== */
+
+#resultados .opcion {
+    display: block;
+    background-color: white;
+    border: 1px solid #dfe4e8;
+    border-left: 4px solid #1d4773;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 16px;
+    cursor: default;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+#resultados .opcion strong {
+    display: block;
+    color: #1d4773;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+#resultados .opcion span {
+    display: block;
+    color: #34495e;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#resultados .opcion span b {
+    color: #68747c;
+}
+
+
+/* ==============================
+   CONTADOR DE REGISTROS
+============================== */
+
+#resultados .ayuda strong {
+    color: #1d4773;
+}
+
+
+/* ==============================
+   PANEL EN CELULARES
+============================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .pagina {
+        padding: 25px 20px;
+        border-radius: 14px;
+    }
+
+    .encabezado h1 {
+        font-size: 34px;
+    }
+
+    .encabezado h2 {
+        font-size: 19px;
+    }
+
+    .campo,
+    .selector {
+        font-size: 16px;
+    }
+
+    #resultados .opcion {
+        padding: 14px;
+    }
+
+}
